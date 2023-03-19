@@ -4,64 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-
     <title>Blogr - Landing Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header
-      class="bg-gradient-to-br from-[#ff8f70] to-[#ff3d54] rounded-bl-[100px] min-h-[70vh] relative overflow-hidden"
+      class="bg-gradient-to-br from-[#ff8f70] to-[#ff3d54] rounded-bl-[30px] min-h-[70vh] relative overflow-hidden md:rounded-bl-[100px]"
     >
       <nav class="relative z-10">
         <ul class="px-6 pt-12 flex justify-between items-center">
           <li><img src="/images/logo.svg" alt="Blogr Logo" /></li>
-          <li>
+          <li id="toggle-btn" role="button">
             <img
               src="images/icon-hamburger.svg"
               alt="Menu Icon"
-              class="cursor-pointer"
+              class="toggle-icon cursor-pointer"
+            />
+            <img
+              src="images/icon-close.svg"
+              alt="Menu Icon"
+              class="toggle-icon hidden cursor-pointer"
             />
           </li>
+          <section
+            class="mobile-menu text-[#1f3f5b] bg-white w-[90%] mx-auto rounded-lg z-50 absolute top-[140%] left-[50%] translate-x-[-50%] font-semibold text-center p-6 hidden flex-col gap-8 animate-popup"
+            id="mobile-menu"
+          >
+            <a href="/" class="flex items-center justify-center gap-2">
+              Product
+              <img src="/images/icon-arrow-dark.svg" />
+            </a>
+
+            <a href="/" class="flex items-center justify-center gap-2">
+              Company
+              <img src="/images/icon-arrow-dark.svg" />
+            </a>
+
+            <div
+              class="flex flex-col items-center justify-center gap-2 group cursor-pointer"
+            >
+              <div class="connect__heading flex items-center gap-2">
+                Connect
+                <img src="/images/icon-arrow-dark.svg" />
+              </div>
+              <div
+                class="bg-gray-200 w-full rounded-lg hidden place-content-center gap-3 py-4 animate-popup group-hover:grid"
+              >
+                <a href="/">Contact</a>
+                <a href="/">Newsletter</a>
+                <a href="/">LinkedIn</a>
+              </div>
+            </div>
+
+            <hr />
+
+            <div
+              class="buttons flex flex-col gap-5 justify-center items-center text-lg"
+            >
+              <button type="button" class="">Login</button>
+              <button
+                type="button"
+                class="bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] text-white rounded-3xl w-[50%] py-3 px-6 text-lg"
+              >
+                Sign Up
+              </button>
+            </div>
+          </section>
         </ul>
       </nav>
-      <section
-        class="mobile-menu text-[#1f3f5b] bg-white w-[90%] mx-auto rounded-lg z-50 absolute top-[15%] left-[50%] translate-x-[-50%] font-semibold text-center p-6 flex flex-col gap-6"
-      >
-        <a href="/" class="flex items-center justify-center gap-2">
-          Product
-          <img src="/images/icon-arrow-dark.svg" />
-        </a>
-
-        <a href="/" class="flex items-center justify-center gap-2">
-          Company
-          <img src="/images/icon-arrow-dark.svg" />
-        </a>
-
-        <a href="/" class="flex items-center justify-center gap-2">
-          Connect
-          <img src="/images/icon-arrow-dark.svg" />
-          <ul
-            class="bg-gray-200 w-full rounded-lg grid place-content-center gap-3 py-4"
-          >
-            <a href="/">Contact</a>
-            <a href="/">Newsletter</a>
-            <a href="/">LinkedIn</a>
-          </ul>
-        </a>
-        <hr />
-
-        <div
-          class="buttons flex flex-col gap-5 justify-center items-center text-lg"
-        >
-          <button type="button" class="">Login</button>
-          <button
-            type="button"
-            class="bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] text-white rounded-3xl w-[50%] py-3 px-6 text-lg"
-          >
-            Sign Up
-          </button>
-        </div>
-      </section>
 
       <section
         class="hero text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font-overpass w-[350px] text-center z-[1]"

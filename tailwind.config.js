@@ -10,6 +10,15 @@ module.exports = {
       backgroundImage: {
         heroImage: 'url("images/bg-pattern-intro-mobile.svg")',
       },
+      keyframes: {
+        popup: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100%' },
+        },
+      },
+      animation: {
+        popup: 'popup 150ms ease-in-out',
+      },
     },
   },
   plugins: [],
