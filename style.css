@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heading {
+  font-weight: 600;
+  color: #1f3f5b;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 1.25rem;
+}
