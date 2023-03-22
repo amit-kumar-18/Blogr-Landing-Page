@@ -15,64 +15,67 @@
     >
       <nav class="relative z-10">
         <ul class="px-6 pt-12 flex justify-between items-center">
-          <li><img src="/images/logo.svg" alt="Blogr Logo" /></li>
+          <li>
+            <a href="/"><img src="/images/logo.svg" alt="Blogr Logo" /></a>
+          </li>
           <li id="toggle-btn" role="button">
             <img
               src="images/icon-hamburger.svg"
               alt="Menu Icon"
               class="toggle-icon cursor-pointer"
             />
+
             <img
               src="images/icon-close.svg"
               alt="Menu Icon"
               class="toggle-icon hidden cursor-pointer"
             />
           </li>
-          <section
-            class="mobile-menu text-[#1f3f5b] bg-white w-[90%] mx-auto rounded-lg z-50 absolute top-[140%] left-[50%] translate-x-[-50%] font-semibold text-center p-6 hidden flex-col gap-8 animate-popup"
-            id="mobile-menu"
-          >
-            <a href="/" class="flex items-center justify-center gap-2">
-              Product
-              <img src="/images/icon-arrow-dark.svg" />
-            </a>
-
-            <a href="/" class="flex items-center justify-center gap-2">
-              Company
-              <img src="/images/icon-arrow-dark.svg" />
-            </a>
-
-            <div
-              class="flex flex-col items-center justify-center gap-2 group cursor-pointer"
-            >
-              <div class="connect__heading flex items-center gap-2">
-                Connect
-                <img src="/images/icon-arrow-dark.svg" />
-              </div>
-              <div
-                class="bg-gray-200 w-full rounded-lg hidden place-content-center gap-3 py-4 animate-popup group-hover:grid"
-              >
-                <a href="/">Contact</a>
-                <a href="/">Newsletter</a>
-                <a href="/">LinkedIn</a>
-              </div>
-            </div>
-
-            <hr />
-
-            <div
-              class="buttons flex flex-col gap-5 justify-center items-center text-lg"
-            >
-              <button type="button" class="">Login</button>
-              <button
-                type="button"
-                class="bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] text-white rounded-3xl w-[50%] py-3 px-6 text-lg"
-              >
-                Sign Up
-              </button>
-            </div>
-          </section>
         </ul>
+        <section
+          class="mobile-menu text-[#1f3f5b] bg-white w-[90%] mx-auto rounded-lg z-50 absolute top-[140%] left-[50%] translate-x-[-50%] font-semibold text-center p-6 hidden flex-col gap-8 animate-popup"
+          id="mobile-menu"
+        >
+          <a href="/" class="flex items-center justify-center gap-2">
+            Product
+            <img src="/images/icon-arrow-dark.svg" />
+          </a>
+
+          <a href="/" class="flex items-center justify-center gap-2">
+            Company
+            <img src="/images/icon-arrow-dark.svg" />
+          </a>
+
+          <div
+            class="flex flex-col items-center justify-center gap-2 group cursor-pointer"
+          >
+            <div class="connect__heading flex items-center gap-2">
+              Connect
+              <img src="/images/icon-arrow-dark.svg" />
+            </div>
+            <div
+              class="bg-gray-200 w-full rounded-lg hidden place-content-center gap-3 py-4 animate-popup group-hover:grid"
+            >
+              <a href="/">Contact</a>
+              <a href="/">Newsletter</a>
+              <a href="/">LinkedIn</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div
+            class="buttons flex flex-col gap-5 justify-center items-center text-lg"
+          >
+            <button type="button" class="">Login</button>
+            <button
+              type="button"
+              class="bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] text-white rounded-3xl w-[50%] py-3 px-6 text-lg"
+            >
+              Sign Up
+            </button>
+          </div>
+        </section>
       </nav>
 
       <section
@@ -203,35 +206,37 @@
       class="bg-[#25252d] grid place-content-center text-center py-16 gap-16 rounded-tr-[80px]"
     >
       <div class="footer__logo">
-        <img src="images/logo.svg" alt="Blogr's Logo" />
+        <a href="/">
+          <img src="images/logo.svg" alt="Blogr's Logo" />
+        </a>
       </div>
 
       <div class="footer__content font-overpass">
         <div class="footer__product mb-8">
           <h3 class="text-white font-semibold mb-6 text-xl">Product</h3>
           <ul class="text-[#c8c8cb] grid gap-2">
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
+            <li><a href="/"> Overview </a></li>
+            <li><a href="/"> Pricing</a></li>
+            <li><a href="/"> Marketplace</a></li>
+            <li><a href="/"> Features</a></li>
+            <li><a href="/"> Integrations</a></li>
           </ul>
         </div>
         <div class="footer__company mb-8">
           <h3 class="text-white font-semibold mb-6 text-xl">Company</h3>
           <ul class="text-[#c8c8cb] grid gap-2">
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
+            <li><a href="/"> About</a></li>
+            <li><a href="/"> Team</a></li>
+            <li><a href="/"> Blog</a></li>
+            <li><a href="/"> Careers</a></li>
           </ul>
         </div>
         <div class="footer__connect">
           <h3 class="text-white font-semibold mb-6 text-xl">Connect</h3>
           <ul class="text-[#c8c8cb] grid gap-2">
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
+            <li><a href="/"> Contact</a></li>
+            <li><a href="/"> Newsletter</a></li>
+            <li><a href="/"> LinkedIn</a></li>
           </ul>
         </div>
       </div>
