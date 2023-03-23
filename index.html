@@ -14,11 +14,53 @@
       class="bg-gradient-to-br from-[#ff8f70] to-[#ff3d54] rounded-bl-[30px] min-h-[70vh] relative overflow-hidden md:rounded-bl-[100px]"
     >
       <nav class="relative z-10">
-        <ul class="px-6 pt-12 flex justify-between items-center">
+        <ul
+          class="px-6 pt-12 flex justify-between items-center lg:justify-start lg:gap-12"
+        >
           <li>
             <a href="/"><img src="/images/logo.svg" alt="Blogr Logo" /></a>
           </li>
-          <li id="toggle-btn" role="button">
+          <li
+            class="hidden lg:flex justify-between items-center w-full font-overpass font-medium"
+          >
+            <div class="nav__items flex gap-8 text-white">
+              <div class="nav__item flex items-center gap-3 cursor-pointer">
+                <span>Product</span>
+                <img src="/images/icon-arrow-light.svg" alt="Product" />
+              </div>
+              <div class="nav__item flex items-center gap-3 cursor-pointer">
+                <span>Company</span>
+                <img src="/images/icon-arrow-light.svg" alt="Product" />
+              </div>
+              <div
+                class="nav__item flex items-center gap-3 cursor-pointer group relative"
+              >
+                <span>Connect</span>
+                <img src="/images/icon-arrow-light.svg" alt="Product" />
+
+                <div
+                  class="connect__items hidden absolute flex-col top-[1.5rem] left-[50%] -translate-x-[50%] gap-3 bg-white text-black min-w-[150px] p-4 text-left rounded-md group-hover:flex"
+                >
+                  <a href="/" class="hover:font-semibold">Contact</a>
+                  <a href="/" class="hover:font-semibold">Newsletter</a>
+                  <a href="/" class="hover:font-semibold">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="buttons flex gap-5 justify-center items-center text-base font-semibold"
+            >
+              <button type="button" class="text-white">Login</button>
+              <button
+                type="button"
+                class="bg-white text-[#ff8f70] rounded-3xl py-2 px-7 transition-colors hover:bg-white/[.2] hover:text-white"
+              >
+                Sign Up
+              </button>
+            </div>
+          </li>
+          <li id="toggle-btn" role="button" class="lg:hidden">
             <img
               src="images/icon-hamburger.svg"
               alt="Menu Icon"
@@ -106,7 +148,12 @@
       <img
         src="/images/bg-pattern-intro-mobile-cropped.svg"
         alt=""
-        class="absolute w-auto -bottom-10 -right-44 scale-[2.6] z-0 opacity-[.6]"
+        class="absolute w-auto -bottom-10 -right-44 scale-[2.6] z-0 opacity-[.6] lg:hidden"
+      />
+      <img
+        src="./images/bg-pattern-intro-desktop-cropped.svg"
+        alt=""
+        class="hidden lg:block absolute -top-[30rem] -right-[30rem] scale-[1.5]"
       />
     </header>
 
