@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
 .heading {
   font-weight: 600;
   font-size: 1.875rem;
@@ -17,3 +15,5 @@
   margin-bottom: 1.25rem;
   padding-inline: 1.25rem;
 }
+
+@tailwind utilities;
