@@ -6,6 +6,8 @@
 
     <title>Blogr - Landing Page</title>
 
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
   </head>
@@ -20,16 +22,16 @@
           </li>
           <li class="hidden lg:flex justify-between items-center w-full font-overpass font-medium">
             <div class="nav__items flex gap-8 text-white">
-              <div class="nav__item flex items-center gap-3 cursor-pointer">
-                <span>Product</span>
+              <div class="nav__item flex items-center gap-3">
+                <span class="lg:hover:underline cursor-pointer">Product</span>
                 <img src="/images/icon-arrow-light.svg" alt="Product" />
               </div>
-              <div class="nav__item flex items-center gap-3 cursor-pointer">
-                <span>Company</span>
+              <div class="nav__item flex items-center gap-3">
+                <span class="lg:hover:underline cursor-pointer">Company</span>
                 <img src="/images/icon-arrow-light.svg" alt="Product" />
               </div>
-              <div class="nav__item flex items-center gap-3 cursor-pointer group relative">
-                <span>Connect</span>
+              <div class="nav__item flex items-center gap-3 group relative">
+                <span class="lg:hover:underline cursor-pointer">Connect</span>
                 <img src="/images/icon-arrow-light.svg" alt="Product" />
 
                 <div
@@ -46,7 +48,7 @@
               <button type="button" class="text-white">Login</button>
               <button
                 type="button"
-                class="bg-white text-[#ff8f70] rounded-3xl py-2 px-7 transition-colors hover:bg-white/[.2] hover:text-white"
+                class="bg-white text-[#ff8f70] rounded-3xl py-2 px-7 transition-colors lg:hover:bg-white/[.2] lg:hover:text-white"
               >
                 Sign Up
               </button>
@@ -119,10 +121,16 @@
         </div>
 
         <div class="hero__buttons space-x-2">
-          <button type="button" class="text-[#ff525d] bg-white rounded-3xl py-3 px-6 font-bold">
+          <button
+            type="button"
+            class="text-[#ff525d] bg-white rounded-3xl py-3 px-6 font-bold lg:hover:bg-white/[.2] lg:hover:text-white"
+          >
             Start for Free
           </button>
-          <button type="button" class="border-white border-2 py-3 px-6 rounded-3xl font-bold">
+          <button
+            type="button"
+            class="border-white border-2 py-3 px-6 rounded-3xl font-bold lg:hover:bg-white lg:hover:text-[#ff525d]"
+          >
             Learn More
           </button>
         </div>
@@ -140,17 +148,20 @@
     </header>
 
     <main class="main my-[5rem]">
-      <h2 class="heading text-center text-[#1f3f5b]">Designed for the future</h2>
+      <h2 class="heading text-center text-[#1f3f5b] lg:text-4xl lg:mb-0">
+        Designed for the future
+      </h2>
       <section
-        class="row-1 text-center mx-4 lg:grid lg:grid-cols-2 lg:text-left lg:grid-flow-dense lg:my-20 lg:ml-32 lg:mr-0"
+        class="row-1 text-center mx-4 lg:grid lg:grid-cols-2 lg:text-left lg:grid-flow-dense lg:ml-32 lg:mr-0"
       >
         <div
-          class="row-1__img py-4 mb-8 grid place-content-center lg:col-start-2 lg:place-content-end"
+          class="row-1__img py-4 mb-8 grid place-content-center lg:col-start-2 lg:place-content-end lg:overflow-x-hidden"
         >
+          <img src="./images/illustration-editor-mobile.svg" alt="" class="lg:hidden" />
           <img
-            src="./images/illustration-editor-mobile.svg"
+            src="./images/illustration-editor-desktop.svg"
             alt=""
-            class="lg:scale-[1.2] lg:w-[500px]"
+            class="hidden translate-x-40 lg:block"
           />
         </div>
         <div class="row-1__text lg:place-self-center">
@@ -176,7 +187,7 @@
       </section>
 
       <section
-        class="row-2 mt-64 relative -z-[1] lg:mb-40 bg-gradient-to-b from-[#2c2d3f] to-[#3f4164] rounded-tr-[100px] rounded-bl-[100px] grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1"
+        class="row-2 mt-64 relative -z-[1] lg:mb-40 lg:mt-0 bg-gradient-to-b from-[#2c2d3f] to-[#3f4164] rounded-tr-[100px] rounded-bl-[100px] grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1"
       >
         <div class="row-2__content">
           <div class="row-2__img-mobile relative overflow-hidden min-h-full">
@@ -189,7 +200,7 @@
           <img
             src="./images/illustration-phones.svg"
             alt=""
-            class="absolute -top-[200px] left-[50%] translate-x-[-50%] lg:top-10 lg:left-[12%] lg:translate-x-0 lg:scale-[1.5] h-[360px] w-[360px] z-[1]"
+            class="absolute -top-[150px] left-[50%] translate-x-[-50%] lg:top-10 lg:left-[12%] lg:translate-x-0 lg:scale-[1.5] h-[360px] w-[360px] z-[1]"
           />
         </div>
         <div class="row-2__content relative text-center px-5 pb-10 lg:text-left lg:py-20">
@@ -208,16 +219,17 @@
         class="row-3 text-center mx-4 my-5 lg:grid lg:grid-cols-2 lg:text-left lg:my-20 lg:ml-0 lg:mr-32"
       >
         <div class="row-3__img py-4 my-14 grid place-content-center lg:place-content-start lg:my-0">
+          <img src="./images/illustration-laptop-mobile.svg" alt="" class="scale-[1.2] lg:hidden" />
           <img
-            src="./images/illustration-laptop-mobile.svg"
+            src="./images/illustration-laptop-desktop.svg"
             alt=""
-            class="scale-[1.2] lg:scale-[1.3] lg:w-[500px]"
+            class="hidden -translate-x-40 lg:block"
           />
         </div>
         <div class="row-3__text lg:place-self-center">
           <div class="text__item">
             <h3 class="heading text-[#1f3f5b]">Free, open, simple</h3>
-            <p class="paragraph text-[#4b5862]">
+            <p class="paragraph text-[#4b5862] lg:px-0">
               Blogr is a free and open source application backed by a large community of helpful
               developers. It supports features such as code syntax highlighting, RSS feeds, social
               media integration, third-party commenting tools, and works seamlessly with Google
@@ -226,7 +238,7 @@
           </div>
           <div class="text__item">
             <h3 class="heading text-[#1f3f5b]">Powerful tooling</h3>
-            <p class="paragraph text-[#4b5862]">
+            <p class="paragraph text-[#4b5862] lg:px-0">
               Batteries included. We built a simple and straightforward CLI tool that makes
               customization and deployment a breeze, but capable of producing even the most
               complicated sites.
@@ -237,40 +249,40 @@
     </main>
 
     <footer
-      class="bg-[#25252d] grid place-content-center text-center py-16 gap-16 rounded-tr-[80px]"
+      class="bg-[#25252d] grid place-content-center text-center py-16 gap-16 rounded-tr-[80px] lg:grid-cols-[500px_1fr] lg:gap-5"
     >
-      <div class="footer__logo">
+      <div class="footer__logo lg:justify-self-center">
         <a href="/">
           <img src="images/logo.svg" alt="Blogr's Logo" />
         </a>
       </div>
 
-      <div class="footer__content font-overpass">
+      <div class="footer__content font-overpass lg:grid lg:grid-cols-3 lg:text-left">
         <div class="footer__product mb-8">
           <h3 class="text-white font-semibold mb-6 text-xl">Product</h3>
           <ul class="text-[#c8c8cb] grid gap-2">
-            <li><a href="/"> Overview </a></li>
-            <li><a href="/"> Pricing</a></li>
-            <li><a href="/"> Marketplace</a></li>
-            <li><a href="/"> Features</a></li>
-            <li><a href="/"> Integrations</a></li>
+            <li><a href="/" class="lg:hover:underline"> Overview </a></li>
+            <li><a href="/" class="lg:hover:underline"> Pricing</a></li>
+            <li><a href="/" class="lg:hover:underline"> Marketplace</a></li>
+            <li><a href="/" class="lg:hover:underline"> Features</a></li>
+            <li><a href="/" class="lg:hover:underline"> Integrations</a></li>
           </ul>
         </div>
         <div class="footer__company mb-8">
           <h3 class="text-white font-semibold mb-6 text-xl">Company</h3>
           <ul class="text-[#c8c8cb] grid gap-2">
-            <li><a href="/"> About</a></li>
-            <li><a href="/"> Team</a></li>
-            <li><a href="/"> Blog</a></li>
-            <li><a href="/"> Careers</a></li>
+            <li><a href="/" class="lg:hover:underline"> About</a></li>
+            <li><a href="/" class="lg:hover:underline"> Team</a></li>
+            <li><a href="/" class="lg:hover:underline"> Blog</a></li>
+            <li><a href="/" class="lg:hover:underline"> Careers</a></li>
           </ul>
         </div>
         <div class="footer__connect">
           <h3 class="text-white font-semibold mb-6 text-xl">Connect</h3>
           <ul class="text-[#c8c8cb] grid gap-2">
-            <li><a href="/"> Contact</a></li>
-            <li><a href="/"> Newsletter</a></li>
-            <li><a href="/"> LinkedIn</a></li>
+            <li><a href="/" class="lg:hover:underline"> Contact</a></li>
+            <li><a href="/" class="lg:hover:underline"> Newsletter</a></li>
+            <li><a href="/" class="lg:hover:underline"> LinkedIn</a></li>
           </ul>
         </div>
       </div>
