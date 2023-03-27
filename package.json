@@ -4,7 +4,9 @@
   "description": "![Design preview for the Blogr landing page](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
