@@ -8,6 +8,28 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
+## Getting Started 
+
+This project was scaffolded with Vite.
+
+### Available Scripts
+
+In the project directory, you can run:
+
+With NPM:
+### `npm install`
+
+With Yarn:
+### `yarn install`
+
+With PNPM:
+### `pnpm install`
+
+It installs all the project dependencies.
+
+### Run `npm run dev` to start development server
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
